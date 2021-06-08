@@ -95,7 +95,7 @@ class ProductsItems extends Component {
                         this.props.products.map(product =>  (<div className="col-md-3" key={product.id}>
                         <figure className="card card-product">
                             <div className="img-wrap">
-                                <img className="img-responsive" src={product.image} width="193" height="130" />
+                                <img className="img-responsive" src={product.image} alt="products" width="193" height="130" />
                             </div>
                             <figcaption className="info-wrap">
                                 <h4 className="title">{product.title}</h4>

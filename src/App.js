@@ -129,9 +129,9 @@ class App extends Component {
         <div className="container mt-3">
           <Switch>
           <Route exact path="/" component={ProductItems}/> 
-           <Route path="/products" component={ProductsList} /> 
+          <Route exact path={["/products"]} component={ProductsList} /> 
             <Route  path="/add" component={AddProduct} />
-            <Route path="/products/:id" component={Product} />
+            <Route exact path="/products/:id" component={Product} />
             <Route path="/cart/:id" component={Cart} />
             <Route exact path="/login" component={Login} />
             <Route  path="/profile" component={Profile} />
