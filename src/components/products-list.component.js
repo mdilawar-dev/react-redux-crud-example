@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { retrieveProducts, findProductsBydesc} from "../actions/products";
 import { Link } from "react-router-dom";
+
 class ProductsList extends Component {
   constructor(props) {
     super(props);
@@ -54,6 +55,7 @@ class ProductsList extends Component {
   render() {
     const { searchdesc, currentProduct, currentIndex } = this.state;
     const { products } = this.props;
+    
 
     return (
       <div className="list row">
